@@ -107,13 +107,16 @@ function App() {
 
 export default App;
 
-## Project Structure
-# src/: Contains all source code.
-# components/: Reusable React components (e.g., Header, Footer, Carousel).
-# pages/: Page components for different sections (e.g., Home, About Us).
-# App.js: Main application component and routing setup.
-# index.js: Entry point of the application.
-# public/: Public assets (e.g., index.html).
-# tailwind.config.js: Configuration for Tailwind CSS.
-# package.json: Metadata and dependencies for the project.
-# README.md: Documentation for the project.
+
+export default App;
+
+# Project Structure
+## src/: Contains all source code.
+## components/: Reusable React components (e.g., Header, Footer, Carousel).
+## pages/: Page components for different sections (e.g., Home, About Us).
+## App.js: Main application component and routing setup.
+## index.js: Entry point of the application.
+## public/: Public assets (e.g., index.html).
+## tailwind.config.js: Configuration for Tailwind CSS.
+## package.json: Metadata and dependencies for the project.
+## README.md: Documentation for the project.
