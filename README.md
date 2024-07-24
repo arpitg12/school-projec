@@ -74,49 +74,29 @@ This command installs all packages listed in package.json, including:
 # React Router for routing
 # react-responsive-carousel for carousel functionality
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import Academics from './pages/Academics';
-import Admissions from './pages/Admissions';
-import Faculty from './pages/Faculty';
-import Students from './pages/Students';
-import Gallery from './pages/Gallery';
-import ContactUs from './pages/ContactUs';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
-function App() {
-  return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/academics" element={<Academics />} />
-        <Route path="/admissions" element={<Admissions />} />
-        <Route path="/faculty" element={<Faculty />} />
-        <Route path="/students" element={<Students />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
-}
+### Detailed Description:
 
-export default App;
+- **`public/`**: Contains static assets. The `index.html` file is the main HTML file for the project.
+- **`src/`**: Contains all source code for the application.
+  - **`components/`**: Reusable React components. Examples include:
+    - `Header.js`: Navigation header component
+    - `Footer.js`: Footer component
+    - `Carousel.js`: Carousel component
+  - **`pages/`**: Page components for different sections of the site. Examples include:
+    - `Home.js`: Home page component
+    - `AboutUs.js`: About Us page component
+    - `Academics.js`: Academics page component
+    - `Admissions.js`: Admissions page component
+    - `Faculty.js`: Faculty page component
+    - `Students.js`: Students page component
+    - `Gallery.js`: Gallery page component
+    - `ContactUs.js`: Contact Us page component
+  - **`App.js`**: Main application component where routing is set up.
+  - **`index.js`**: Entry point of the application where the React app is rendered.
+  - **`tailwind.config.js`**: Configuration file for Tailwind CSS.
+- **`package.json`**: Contains metadata about the project and lists dependencies.
+- **`README.md`**: Documentation for the project.
+- **`LICENSE`**: Information about the project's license.
 
-
-export default App;
-
-# Project Structure
-## src/: Contains all source code.
-## components/: Reusable React components (e.g., Header, Footer, Carousel).
-## pages/: Page components for different sections (e.g., Home, About Us).
-## App.js: Main application component and routing setup.
-## index.js: Entry point of the application.
-## public/: Public assets (e.g., index.html).
-## tailwind.config.js: Configuration for Tailwind CSS.
-## package.json: Metadata and dependencies for the project.
-## README.md: Documentation for the project.
+This structure helps in keeping the code organized and manageable, making it easier for developers to navigate and contribute to the project.
